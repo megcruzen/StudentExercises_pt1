@@ -44,11 +44,15 @@ Once you have defined all of your custom types, go to your Main() method in Prog
 
 1. Create a list of students. Add all of the student instances to it.
 
-```List<Student> students = new List<Student>();```
+```cs
+List<Student> students = new List<Student>();
+```
 
 2. Create a list of exercises. Add all of the exercise instances to it.
 
-```List<Exercise> exercises = new List<Exercise>();```
+```cs
+List<Exercise> exercises = new List<Exercise>();
+```
 
 Generate a report that displays which students are working on which exercises.
 

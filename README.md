@@ -4,6 +4,7 @@
 You are going to build a console application that tracks exercises that are assigned to students at Nashville Software School.
 
 ## Entity Relationship Diagram
+<img src="StudentExercises_ERD.jpg" />
 
 ## Setup
 Make sure that each class you define is in its own file. Also make sure each class is in the `StudentExercises` namespace.

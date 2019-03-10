@@ -45,23 +45,23 @@ namespace StudentExercises
 
             /* Create 4, or more, students and assign them to one of the cohorts. */
 
-            Student megcruzen = new Student("Megan", "Cruzen", "megcruzen");
+            Student megcruzen = new Student("Megan", "Cruzen", "megcruzen", C29);
             C29.StudentList.Add(megcruzen);
-            Student asiacarter = new Student("Asia", "Carter", "asiacarter");
+            Student asiacarter = new Student("Asia", "Carter", "asiacarter", C29);
             C29.StudentList.Add(asiacarter);
-            Student joeblow = new Student("Joe", "Blow", "joeblow");
+            Student joeblow = new Student("Joe", "Blow", "joeblow", C30);
             C30.StudentList.Add(joeblow);
-            Student janesmith = new Student("Jane", "Smith", "janesmith");
+            Student janesmith = new Student("Jane", "Smith", "janesmith", C31);
             C31.StudentList.Add(janesmith);
 
 
             /* Create 3, or more, instructors and assign them to one of the cohorts. */
 
-            Instructor andy = new Instructor("Andy", "Collins", "andyc");
+            Instructor andy = new Instructor("Andy", "Collins", "andyc", C29);
             C29.InstructorList.Add(andy);
-            Instructor steve = new Instructor("Steve", "Brownlee", "coach");
+            Instructor steve = new Instructor("Steve", "Brownlee", "coach", C30);
             C30.InstructorList.Add(steve);
-            Instructor jisie = new Instructor("Jisie", "David", "jisiedavid");
+            Instructor jisie = new Instructor("Jisie", "David", "jisiedavid", C31);
             C31.InstructorList.Add(jisie);
 
 
@@ -69,10 +69,8 @@ namespace StudentExercises
 
             andy.AssignExercise(C29, UserDefinedTypes);
             andy.AssignExercise(C29, CDictionaries);
-
             steve.AssignExercise(C30, ReactStateProps);
             steve.AssignExercise(C30, ReactURLRouting);
-
             jisie.AssignExercise(C31, BuildingDOmComponents);
             jisie.AssignExercise(C31, BuildingAPI);
 
@@ -91,12 +89,6 @@ namespace StudentExercises
 
 
             /* Generate a report that displays which students are working on which exercises. */
-
-            // foreach (Student student in StudentList) {
-            //     foreach (Exercise exercise in student.ExerciseList) {
-            //         Console.WriteLine($"{student.FirstName} {student.LastName} is working on {exercise.Name}");
-            //     }
-            // }
 
             foreach (Student student in StudentList) {
                 List<string> currentExercises = new List<string>();

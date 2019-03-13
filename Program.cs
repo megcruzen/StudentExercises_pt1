@@ -38,9 +38,9 @@ namespace StudentExercises
 
             /* Create 3, or more, cohorts. */
 
-            Cohort C29 = new Cohort("C29");
-            Cohort C30 = new Cohort("C30");
-            Cohort C31 = new Cohort("C31");
+            Cohort C29 = new Cohort("Day Cohort 29");
+            Cohort C30 = new Cohort("Day Cohort 30");
+            Cohort C31 = new Cohort("Day Cohort 31");
 
 
             /* Create 4, or more, students and assign them to one of the cohorts. */

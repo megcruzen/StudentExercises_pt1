@@ -10,13 +10,11 @@ namespace StudentExercises
         public string FirstName {get; set;}
         public string LastName {get; set;}
         public string Slack {get; set;}
+        public Cohort Cohort {get; set;}
         public List<Exercise> ExerciseList {get; set;}
 
-        // Relationship Properties
-        public Cohort Cohort {get; set;}
-
+        // Constructor method
         public Student(string firstname, string lastname, string slack, Cohort cohort) {
-        // public Student(string firstname, string lastname, string slack) {
             FirstName = firstname;
             LastName = lastname;
             Slack = slack;
